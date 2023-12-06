@@ -42,9 +42,9 @@
             <table class="table table-stripped">
                 <thead class="table-primary">
                     <tr>
-                        <th>id</th>
-                        <th>Gambar Sampul</th>
-                        <th>Judul Buku</th>
+                        <th>ID</th>
+                        <th>Buku</th>
+                        <th>Judul</th>
                         <th>Penulis</th>
                         <th>Harga</th>
                         <th>Tanggal Terbit</th>

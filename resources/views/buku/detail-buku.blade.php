@@ -23,7 +23,7 @@
                             <h1><b>{{ $buku->judul }}</b></h1>
                             <form method="post" action="{{ route('buku.favorite', $buku->id) }}">
                                 @csrf
-                                <button class="mb-3 btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-bookmark"></i> Simpan ke daftar favorit</button>
+                                <button class="mb-3 btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-bookmark"></i> Simpan ke favorit</button>
                             </form>
                             <table class="table table-hover">
                                 <tr>
@@ -49,7 +49,7 @@
                     <table class="table">
                         <tr>
                             <td>Rating</td>
-                            <td><b id="rating">{{ $buku->averageRating() }}</b></td>
+                            <td><b id="rating" class="flex">{{ $buku->averageRating() }} <i class="bi bi-star-fill mx-1"></i></b></td>
                             <script type="text/javascript">
                                 var div = document.getElementById('rating');
                                 if(div.innerHTML == "") {
